@@ -30,7 +30,7 @@ def ajustar_tamanho_sequencia(seq_numeros, tamanho_jogo):
     return seq_numeros
 
 def dividir_em_jogos(seq_numeros, tamanho_jogo):
-    jogos = [seq_numeros[i:i + tamanho_jogo] for i in range(0, len(seq_numeros), tamanho_jogo)]  # noqa: E501
+    jogos = [seq_numeros[i:i + tamanho_jogo] for i in range(0, len(seq_numeros), tamanho_jogo)]
 
     jogos_nomeados = {"jogo" + str(i + 1): jogo for i, jogo in enumerate(jogos)}
 
