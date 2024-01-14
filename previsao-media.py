@@ -5,7 +5,7 @@ dados = pd.read_csv('resultados.csv', encoding='ISO-8859-1')
 
 # Função para converter a string de números em uma lista de inteiros
 def converter_numeros(numeros_str):
-    numeros = numeros_str.split(", ")  # Dividir a string em números separados por vírgula e espaço  # noqa: E501
+    numeros = numeros_str.split(", ")  # Dividir a string em números separados por vírgula e espaço
     return [int(numero) for numero in numeros]
 
 # Aplicar a função para converter os números sorteados em uma lista de inteiros
